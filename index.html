@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criptossagem</title>
+    <link rel="shortcut icon" href="assets/img/logoMobile.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img
+        class="header-image"
+        src="assets/img/logoMobile.png"
+        alt="pasta de arquivo, com uma mensagem de 'Top Secret' na frente."
+      />
+      <h1 class="header-title">Criptossagem</h1>
+    </header>
+    <main>
+      <section class="container">
+        <section class="bloco-para-desktop1">
+          
+            <textarea class="container-input" type="text" placeholder="Digite sua mensagem aqui..."></textarea>
+          
+          
+            <p class="container-obs"><img class="container-obs-image" src="assets/img/attencion.svg" alt="">Apenas letras minúsculas e sem acento. </p>
+
+          <div class="btn-box">
+            <button class="btn btn-encrypt" type="button" onclick="criptografarMensagem()">Criptografar</button>
+            <button class="btn btn-decrypt" type="button" onclick="descriptografarMensagem()">Descriptografar</button>
+          </div>
+          
+        </section>
+
+        <section class="bloco-para-desktop2">
+          
+            <div class="caixaTexto-resultado">
+              <h2 class="caixaTexto-texto">Nenhuma mensagem <br> encontrada</h2>
+              <p class="caixaTexto-texto">Digite um texto que você <br> deseja criptografar ou descriptografar.</p>
+            </div>
+          </div>
+
+          
+            <button class="btn btn-copy" type="button" onclick="copiarMensagem()">Copiar</button>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer id="footer">Desenvolvido by <a class="footer-link" href="https://github.com/MichelsonLima">Miki</a></footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>
