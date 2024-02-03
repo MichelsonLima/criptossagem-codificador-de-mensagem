@@ -8,17 +8,23 @@ A letra "u" é convertida para "ufat"
 const btnClicked = document.querySelector('.btn')
 const btnCopy = document.querySelector('.btn-copy')
 
+function removerAcentos(texto) {
+  return texto
+      .replace(/[áàãâä]/g, 'a')
+      .replace(/[éèêë]/g, 'e')
+      .replace(/[íìîï]/g, 'i')
+      .replace(/[óòõôö]/g, 'o')
+      .replace(/[úùûü]/g, 'u')
+      .replace(/[ç]/g, 'c')
+      .replace(/[ñ]/g, 'n');
+}
+
 function criptografarMensagem() {
   const mensagem = document.querySelector(".container-input");
   const mensagemOriginal = mensagem.value;
   function substituirVogais(letra) {
-    switch (letra.toLowerCase()) {
-      case'á':
-        return "ai";
-      case 'ã':
-        return "ai";
-      case 'â':
-        return "ai";
+    const letraSemAcento = removerAcentos(letra)
+    switch (letraSemAcento.toLowerCase()) {
       case "a":
         return "ai";
       case "e":
