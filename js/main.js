@@ -13,6 +13,12 @@ function criptografarMensagem() {
   const mensagemOriginal = mensagem.value;
   function substituirVogais(letra) {
     switch (letra.toLowerCase()) {
+      case'á':
+        return "ai";
+      case 'ã':
+        return "ai";
+      case 'â':
+        return "ai";
       case "a":
         return "ai";
       case "e":
