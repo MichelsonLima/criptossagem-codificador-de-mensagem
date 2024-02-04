@@ -18,5 +18,5 @@
 ## 🎨 Figma
 <p>Although it was challenging to have a standard layout for creating the decoder, I decided to create the layout myself in Figma. Below are the components I used to create the website design.</p>
 <img src='assets/img/readmeFigma.png'>
-
+<img src='assets/img/modelosFigma.png'>
 #challengeonedecodificador5

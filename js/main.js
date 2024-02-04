@@ -14,9 +14,7 @@ function removerAcentos(texto) {
       .replace(/[éèêë]/g, 'e')
       .replace(/[íìîï]/g, 'i')
       .replace(/[óòõôö]/g, 'o')
-      .replace(/[úùûü]/g, 'u')
-      .replace(/[ç]/g, 'c')
-      .replace(/[ñ]/g, 'n');
+      .replace(/[úùûü]/g, 'u');
 }
 
 function criptografarMensagem() {
